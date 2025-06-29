@@ -7,9 +7,9 @@ class class_1
 {
     int value1;
 public:
-    void indata(int a) { value1 = a; } // ✅ Fixed name to match usage in main()
+    void indata(int a) { value1 = a; } )
     void display(void) { cout << value1 << "\n"; }
-    friend void exchange(class_1 &, class_2 &); // ✅ Fixed: added comma
+    friend void exchange(class_1 &, class_2 &); 
 };
 
 class class_2
@@ -18,11 +18,11 @@ class class_2
 public:
     void indata(int a) { value2 = a; }
     void display(void) { cout << value2 << "\n"; }
-    friend void exchange(class_1 &, class_2 &); // ✅ Fixed: match declaration
-}; // ✅ Fixed: added missing semicolon here
+    friend void exchange(class_1 &, class_2 &); 
+}; 
 
 //-----------------------------------//
-void exchange(class_1 &x, class_2 &y) // ✅ Global friend function definition
+void exchange(class_1 &x, class_2 &y) //  Global friend function definition
 {
     int temp = x.value1;
     x.value1 = y.value2;

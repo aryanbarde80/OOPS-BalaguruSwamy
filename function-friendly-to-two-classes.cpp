@@ -9,7 +9,7 @@ class XYZ
 {
     int x;
     public:
-    void setvalue(int i){x=i;} // ✅ Fixed: added missing semicolon
+    void setvalue(int i){x=i;} 
     friend void max(XYZ,ABC);
 };
 
@@ -19,7 +19,7 @@ class ABC
 {
     int a;
     public:
-    void setvalue(int i){a=i;} // ✅ Fixed: added missing semicolon
+    void setvalue(int i){a=i;} 
     friend void max(XYZ,ABC);
 };
 
